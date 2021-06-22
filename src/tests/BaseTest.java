@@ -35,7 +35,7 @@ public class BaseTest {
 	YourPersonalInformation yourPersonalInformationPage;
 	MyWishListsPage myWishListsPage;
 	Dresses dressesPage;
-	YourShoppingCart yourShoppingCart;
+	YourShoppingCart yourShoppingCartPage;
 
 	
 	@BeforeClass
@@ -57,7 +57,7 @@ public class BaseTest {
 		yourPersonalInformationPage = new YourPersonalInformation(driver);
 		myWishListsPage = new MyWishListsPage(driver);
 		dressesPage= new Dresses(driver);
-		yourShoppingCart = new YourShoppingCart(driver);
+		yourShoppingCartPage = new YourShoppingCart(driver);
 
 	}
 	@AfterClass

@@ -46,9 +46,9 @@ public class YourShoppingCart {
 		boolean present;
 		try {
 			getPrintedDressColorfulDressProduct().getText();
-			present= false;	
+			present = false;	
 		} catch (Exception e) {
-			present= true;
+			present = true;
 		}
 		return present;
 	}
@@ -59,9 +59,9 @@ public class YourShoppingCart {
 		int valueOfCartInt;
 		String valueInNumberInCartText=getNumberInCart().getText();
 		if(valueInNumberInCartText.equals("")) {
-			valueOfCartInt=0;
+			valueOfCartInt = 0;
 		}else {
-			valueOfCartInt=Integer.valueOf(valueInNumberInCartText);
+			valueOfCartInt = Integer.valueOf(valueInNumberInCartText);
 		}
 		return valueOfCartInt;
 	}

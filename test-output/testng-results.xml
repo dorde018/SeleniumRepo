@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-15T10:49:21 CEST" name="Default suite" finished-at="2021-06-15T10:49:38 CEST" duration-ms="16668">
+  <suite started-at="2021-06-22T19:56:45 CEST" name="Default suite" finished-at="2021-06-22T19:57:07 CEST" duration-ms="21699">
     <groups>
     </groups>
-    <test started-at="2021-06-15T10:49:21 CEST" name="Default test" finished-at="2021-06-15T10:49:38 CEST" duration-ms="16668">
-      <class name="tests.ProductsAndCartTests">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.ProductsAndCartTests@70e8f8e]" started-at="2021-06-15T10:49:21 CEST" name="beforeAllTests" finished-at="2021-06-15T10:49:27 CEST" duration-ms="5183" status="PASS">
+    <test started-at="2021-06-22T19:56:45 CEST" name="Default test" finished-at="2021-06-22T19:57:07 CEST" duration-ms="21699">
+      <class name="tests.EditPersonalInfomationTests">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.EditPersonalInfomationTests@1622f1b]" started-at="2021-06-22T19:56:45 CEST" name="beforeAllTests" finished-at="2021-06-22T19:56:51 CEST" duration-ms="5882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:tests.ProductsAndCartTests@70e8f8e]" started-at="2021-06-15T10:49:27 CEST" name="beforeEachTest" finished-at="2021-06-15T10:49:38 CEST" duration-ms="11375" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:tests.EditPersonalInfomationTests@1622f1b]" started-at="2021-06-22T19:56:51 CEST" name="beforeEachTest" finished-at="2021-06-22T19:57:07 CEST" duration-ms="15622" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-KKBJT2E', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Korisnik\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea9952045c6ef50f4c474bf5e2869a45]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-KKBJT2E', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.LoginPage.geteMailAddressField(LoginPage.java:24)
-at pages.LoginPage.insertEmail(LoginPage.java:27)
-at tests.ProductsAndCartTests.beforeEachTest(ProductsAndCartTests.java:17)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Korisnik\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea9952045c6ef50f4c474bf5e2869a45
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.LoginPage.submitButtonClick(LoginPage.java:40)
+at tests.EditPersonalInfomationTests.beforeEachTest(EditPersonalInfomationTests.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,32 +79,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyThatUserCanAddSameProductInCartIfQuantityIs3()[pri:5, instance:tests.ProductsAndCartTests@70e8f8e]" started-at="2021-06-15T10:49:38 CEST" name="verifyThatUserCanAddSameProductInCartIfQuantityIs3" finished-at="2021-06-15T10:49:38 CEST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyThatUserCanEditPerfonalInformation()[pri:0, instance:tests.EditPersonalInfomationTests@1622f1b]" started-at="2021-06-22T19:57:07 CEST" name="verifyThatUserCanEditPerfonalInformation" finished-at="2021-06-22T19:57:07 CEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-KKBJT2E', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Korisnik\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea9952045c6ef50f4c474bf5e2869a45]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-KKBJT2E', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.LoginPage.geteMailAddressField(LoginPage.java:24)
-at pages.LoginPage.insertEmail(LoginPage.java:27)
-at tests.ProductsAndCartTests.beforeEachTest(ProductsAndCartTests.java:17)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Korisnik\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea9952045c6ef50f4c474bf5e2869a45
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.LoginPage.submitButtonClick(LoginPage.java:40)
+at tests.EditPersonalInfomationTests.beforeEachTest(EditPersonalInfomationTests.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,19 +151,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyThatUserCanAddSameProductInCartIfQuantityIs3 -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:tests.ProductsAndCartTests@70e8f8e]" started-at="2021-06-15T10:49:38 CEST" name="afterEachTest" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1623746978492" status="SKIP">
+        </test-method> <!-- verifyThatUserCanEditPerfonalInformation -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:tests.EditPersonalInfomationTests@1622f1b]" started-at="2021-06-22T19:57:07 CEST" name="afterEachTest" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1624384627298" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.ProductsAndCartTests@70e8f8e]" started-at="2021-06-15T10:49:38 CEST" name="afterAllTests" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1623746978495" status="SKIP">
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.EditPersonalInfomationTests@1622f1b]" started-at="2021-06-22T19:57:07 CEST" name="afterAllTests" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1624384627311" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
-      </class> <!-- tests.ProductsAndCartTests -->
+      </class> <!-- tests.EditPersonalInfomationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

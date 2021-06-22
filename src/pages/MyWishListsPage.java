@@ -1,7 +1,5 @@
 package pages;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,10 +14,9 @@ public class MyWishListsPage {
 	WebElement nameOfTheBaseWishListText;
 	WebElement deleteFirstWishListButton;
 	
-	public MyWishListsPage(WebDriver driver) throws IOException {
+	public MyWishListsPage(WebDriver driver) {
 		super();
 		this.driver = driver;
-		excelReader =  new ExcelReader("data/Project.xlsx");
 	}
 
 	public WebElement getNameField() {
@@ -47,15 +44,6 @@ public class MyWishListsPage {
 	public void deleteBaseWishListButtonClick() {
 		getDeleteBaseWishListButton().click();
 	}
-	public void AddNewMultipleWishLists() {
-		int row=26;
-		int column=2;	
-		for (int i = 22; i <=row; i+=2) {
-			String newWishlistName = excelReader.getStringData("TSu4", i, column);
-			insertNameOfNewWishList(newWishlistName);
-			saveButtonClick();	
-		}		
-	}
 	public List<WebElement> getWishListsList(){
 		return driver.findElements(By.className("align_center"));	
 	}
@@ -71,9 +59,3 @@ public class MyWishListsPage {
 	}
 	
 }	
-
-			
-
-
-		
-

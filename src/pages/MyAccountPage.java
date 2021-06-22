@@ -12,6 +12,7 @@ public class MyAccountPage {
 	WebElement myWishListTab;
 	WebElement dressesTab;
 	WebElement yourShoppingCartTab;
+	WebElement signOutButton;
 	
 	public MyAccountPage(WebDriver driver) {
 		super();
@@ -52,5 +53,11 @@ public class MyAccountPage {
 	}
 	public void yourShoppingCartTabClick() {
 		getYourShoppingCartTab().click();
+	}
+	public WebElement getSignOutButton() {
+		return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a"));
+	}
+	public void signOutButtonClick() {
+		getSignOutButton().click();
 	}
 }

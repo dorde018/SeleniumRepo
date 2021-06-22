@@ -105,4 +105,3 @@ public class YourPersonalInformation {
 		return getTextInTheGreenFieldAfterEditingPersonaInformation().getText();
 	}
 }
-

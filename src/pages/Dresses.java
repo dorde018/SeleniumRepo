@@ -70,7 +70,6 @@ public class Dresses{
 	public void printedChiffonDressNameClick() {
 		getPrintedChiffonDressName().click();
 	}
-	
 	public WebElement getContinueShoopingButton() {
 		return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[4]/div[1]/div[2]/div[4]/span"));	
 	}

@@ -51,11 +51,10 @@ public class MyAddressesPage {
 		boolean present;
 		 try{
 			getDeleteFirstNewAddressButton().isDisplayed();
-			present=false;
+			present = false;
 		} catch (Exception e) {
-			present=true;	
+			present = true;	
 	}
 		return present;
 	}	 
 }
-
