@@ -20,7 +20,7 @@ public class ProductsAndCartTests extends BaseTest{
 		loginPage.submitButtonClick();
 	}
 	@Test (priority=0)
-	public void verifyThatUserCanAddOneProductToCart() throws InterruptedException {
+	public void verifyThatUserCanAddOneTheProductToTheCart() throws InterruptedException {
 		myAccountPage.dressesTabClick();
 		int cartValueBeforeAddingProduct = yourShoppingCartPage.valueOfNumberInCart();
 		dressesPage.printedDressColorfulDressNameClick();
@@ -32,7 +32,7 @@ public class ProductsAndCartTests extends BaseTest{
 		assertEquals(cartValueBeforeAddingProduct+numberOfAddedProducts, cartValueAfterAddingProduct);
 	}
 	@Test (priority=5)
-	public void verifyThatUserCanAddSameProductInCartIfQuantityIs3(){
+	public void verifyThatUserCanAddTheSameProductInTheCartIfTheQuantityIs3(){
 		myAccountPage.dressesTabClick();
 		dressesPage.printedDressShortDressNameClick();
 		String wantedQuantity = String.valueOf(excelReader.getIntegerData("TSu5", 22, 2));
@@ -44,7 +44,7 @@ public class ProductsAndCartTests extends BaseTest{
 		assertEquals(actualResult, expectedResult);
 	}
 	@Test (priority=10)
-	public void verifyThatUserCanRemoveProductFromCart() {
+	public void verifyThatUserCanRemoveTheProductFromTheCart() {
 		myAccountPage.dressesTabClick();
 		dressesPage.printedDressColorfulDressNameClick();
 		dressesPage.addToCartButtonClick();
@@ -54,7 +54,7 @@ public class ProductsAndCartTests extends BaseTest{
 		assertTrue(actualResult);
 	}
 	@Test (priority=15)
-	public void verifyThatUserCanAdd3MultipleProductsInCart() throws InterruptedException {
+	public void verifyThatUserCanAdd3MultipleProductsInTheCart() {
 		myAccountPage.dressesTabClick();
 		int cartValueBeforeAddingProduct = yourShoppingCartPage.valueOfNumberInCart();
 		dressesPage.addPrintedSummerDressMaxiDressToCart();

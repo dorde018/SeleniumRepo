@@ -18,7 +18,7 @@ public class EditPersonalInfomationTests extends BaseTest {
 		loginPage.submitButtonClick();
 	}
 	@Test (priority=0)
-	public void verifyThatUserCanEditPerfonalInformation() {
+	public void verifyThatUserCanEditThePerfonalInformation() {
 		
 		myAccountPage.myPeronalInformationTabClick();
 		yourPersonalInformationPage.markMrsSocialTitle();

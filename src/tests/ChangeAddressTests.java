@@ -19,7 +19,7 @@ public class ChangeAddressTests extends BaseTest{
 		loginPage.submitButtonClick();
 	}
 	@Test (priority=0)
-	public void updateAddress() {
+	public void updateTheAddress() {
 		myAccountPage.myAddressesTabClick();
 		myAddressesPage.updateFirstAddressButtonClick();
 		String newAddress = excelReader.getStringData("TSu2", 8, 2);
@@ -31,7 +31,7 @@ public class ChangeAddressTests extends BaseTest{
 		
 	}
 	@Test (priority=5)
-	public void addNewAddress() {
+	public void addTheNewAddress() {
 		myAccountPage.myAddressesTabClick();
 		myAddressesPage.addNewAddressButtonClick();
 		String newAddress = excelReader.getStringData("TSu2", 21, 2);
@@ -52,7 +52,7 @@ public class ChangeAddressTests extends BaseTest{
 		
 	}
 	@Test (priority=10)
-	public void removeAddress() throws InterruptedException {
+	public void removeTheAddress() throws InterruptedException {
 		myAccountPage.myAddressesTabClick();
 		myAddressesPage.deleteFirstNewAddressButtonClick();
 		Thread.sleep(3000);

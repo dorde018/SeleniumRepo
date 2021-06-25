@@ -15,7 +15,7 @@ public class LogInTests extends BaseTest{
 		driver.manage().window().maximize();
 	}
 	@Test (priority=0)
-	public void logInWithValidCredentials() {
+	public void logInWithTheValidCredentials() {
 		homePage.signInButtonClick();
 		String eMail = excelReader.getStringData("TSu1", 6, 2);
 		loginPage.insertEmail(eMail);
@@ -27,7 +27,7 @@ public class LogInTests extends BaseTest{
 		assertEquals(acutalResult, expectedResult);
 	}
 	@Test (priority=5)
-	public void logInWithInvalidPassword() {
+	public void logInWithTheInvalidPassword() {
 		homePage.signInButtonClick();
 		String eMail = excelReader.getStringData("TSu1", 19, 2);
 		loginPage.insertEmail(eMail);
