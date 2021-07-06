@@ -20,7 +20,7 @@ public class ProductsAndCartTests extends BaseTest{
 		loginPage.submitButtonClick();
 	}
 	@Test (priority=0)
-	public void addOneTheProductToTheCart() throws InterruptedException {
+	public void addOneProductToTheCart() throws InterruptedException {
 		myAccountPage.dressesTabClick();
 		int cartValueBeforeAddingProduct = yourShoppingCartPage.valueOfNumberInCart();
 		dressesPage.printedDressColorfulDressNameClick();
