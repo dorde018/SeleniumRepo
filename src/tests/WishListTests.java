@@ -21,7 +21,7 @@ public class WishListTests extends BaseTest {
 		loginPage.submitButtonClick();
 	}
 	@Test (priority=0)
-	public void verifyThatUserCanAddTheWishList() {
+	public void addTheWishList() {
 		myAccountPage.myWishListTabClick();
 		String baseWishListName = excelReader.getStringData("TSu4", 6, 2);
 		myWishListsPage.insertNameOfNewWishList(baseWishListName);
@@ -31,7 +31,7 @@ public class WishListTests extends BaseTest {
 		assertEquals(actualResult, expectedResult);
 	}
 	@Test (priority=5)
-	public void verifyThatUserCanRemoveTheWishList() throws InterruptedException {
+	public void removeTheWishList() throws InterruptedException {
 		myAccountPage.myWishListTabClick();
 		myWishListsPage.deleteBaseWishListButtonClick();
 		Thread.sleep(1000);
@@ -41,7 +41,7 @@ public class WishListTests extends BaseTest {
 		assertFalse(actualResult);
 	}
 	@Test(priority=10)
-	public void verifyThatUserCanAddMultipleWishLists() {
+	public void addMultipleWishLists() {
 		myAccountPage.myWishListTabClick();
 		for (int i = 22; i <= 26; i+=2) {
 			String newWishlistName = excelReader.getStringData("TSu4", i, 2);

@@ -57,7 +57,7 @@ public class YourShoppingCart {
 	}
 	public int valueOfNumberInCart() {
 		int valueOfCartInt;
-		String valueInNumberInCartText=getNumberInCart().getText();
+		String valueInNumberInCartText = getNumberInCart().getText();
 		if(valueInNumberInCartText.equals("")) {
 			valueOfCartInt = 0;
 		}else {
